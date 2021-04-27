@@ -93,8 +93,10 @@ int main()
     cout << "Old:" << endl;
     st.print();
 
+    cout << endl << "Pop:";
     Elem* el5 = st.pop();
     (*el5).print();
+    cout << endl;
 
     cout << "New:" << endl;
     st.print();
