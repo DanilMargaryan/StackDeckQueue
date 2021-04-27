@@ -78,7 +78,7 @@ int main()
 {
     Stack st;                   // Создали стек
 
-    Elem* el = new Elem(5);     
+    Elem* el = new Elem(5);     // Создание эл. стека
     st.push(el);
 
     Elem* el1 = new Elem(4);     
