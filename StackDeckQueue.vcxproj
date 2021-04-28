@@ -139,7 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Elem.cpp" />
+    <ClCompile Include="Stack.cpp" />
     <ClCompile Include="StackDeckQueue.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Elem.h" />
+    <ClInclude Include="Stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
