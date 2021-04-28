@@ -9,8 +9,14 @@ Stack::Stack()
 
 void Stack::init(int size)
 {
+    for (int i = 0; i < size; i++)
+        push(i);
+}
+
+void Stack::antiInit(int size)
+{
     while (size--)
-        this->push(new Elem(0));
+        pop();
 }
 
 Elem* Stack::pop()
@@ -24,16 +30,13 @@ Elem* Stack::pop()
 
 void Stack::push(Elem* el)
 {
-    Elem* tmp = this->head;
-
     if (this->head == nullptr)
-    {
         this->head = el;
-        return;
+    else
+    {
+        el->next = head;
+        head = el;
     }
-    while (tmp->next != nullptr)
-        tmp = tmp->next;
-    tmp->next = el;
 }
 
 void Stack::push(int key)
