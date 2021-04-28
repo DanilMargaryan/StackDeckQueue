@@ -11,5 +11,6 @@ public:
     Elem(int key);
     int getkey();
 
-    friend class Stack;
+    friend class Stack; 
+    friend class Queue;
 };

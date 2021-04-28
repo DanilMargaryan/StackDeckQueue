@@ -1,7 +1,7 @@
 #pragma once
 #include "Stack.h"
 
-class Queue : Stack
+class Queue : public Stack
 {
 private:
 	Elem* tail;
@@ -9,7 +9,6 @@ private:
 public:
 	Queue();
 
-	void push(Elem*); //to tail
-
-	Elem* pop();	  // from head
+	void push(Elem*) override; //to tail
+	void push(int key) override;
 };
