@@ -14,8 +14,8 @@ public:
     void antiInit(int size);
     Elem* pop();
 
-    void push(Elem* el);
-    void push(int key);
+    virtual void push(Elem* el);
+    virtual void push(int key);
 
     void print();
 };
