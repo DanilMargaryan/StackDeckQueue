@@ -18,6 +18,7 @@ int main()
     st1.print();
     cout << endl;
 
+
     // pop elem and print it
     Elem* el = st1.pop();
     int a = (*el).getkey();
