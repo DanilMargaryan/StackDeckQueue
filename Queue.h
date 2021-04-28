@@ -3,12 +3,12 @@
 
 class Queue : public Stack
 {
-private:
+protected:
 	Elem* tail;
 
 public:
 	Queue();
 
-	void push(Elem*); //to tail
+	void push(Elem*);
 	void push(int key);
 };

@@ -1,11 +1,10 @@
 #pragma once
-
 #include "Elem.h"
 
 class Stack
 {
 protected:
-    Elem* head; // ”казатель на начало стека
+    Elem* head;
 
 public:
 

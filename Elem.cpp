@@ -8,6 +8,11 @@ Elem::Elem(int key)
     this->next = nullptr;
 }
 
+void Elem::print()
+{
+    cout << this->key;
+}
+
 int Elem::getkey()
 {
     return this->key;

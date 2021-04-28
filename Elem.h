@@ -9,6 +9,7 @@ private:
 
 public:
     Elem(int key);
+    void print();
     int getkey();
 
     friend class Stack; 
