@@ -2,15 +2,20 @@
 
 Queue::Queue()
 {
-	Stack::head;
+	head = nullptr;
+	tail = nullptr;
 }
 
-void Queue::push(Elem*)
+void Queue::push(Elem* el)
 {
+    if (head == nullptr)
+        head = tail = el;
+    else
+        tail = tail->next = el;  // равно работает справ налево
 }
 
-Elem* Queue::pop()
+void Queue::push(int key)
 {
-	return nullptr;
+    push(new Elem(key));
 }
 
