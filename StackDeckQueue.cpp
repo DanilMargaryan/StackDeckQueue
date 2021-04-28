@@ -8,30 +8,26 @@ using namespace std;
 
 int main()
 {
-    Stack st;                   // Создали стек
+    Stack st1;
+    st1.push(5);
+    st1.push(1);
+    st1.push(3);
 
-    Elem* el = new Elem(5);     // Создание эл. стека
-    st.push(el);
-
-    Elem* el1 = new Elem(4);     
-    st.push(el1);
-
-    Elem* el2 = new Elem(3);     
-    st.push(el2);
-
-    Elem* el3 = new Elem(2);     
-    st.push(el3);
-
-    cout << "Old:" << endl;
-    st.print();
-
-    cout << endl << "Pop:";
-    Elem* el5 = st.pop();
-    (*el5).print();
+    // print stack
+    cout << "Stack: " << endl;
+    st1.print();
     cout << endl;
 
-    cout << "New:" << endl;
-    st.print();
+    // pop elem and print it
+    Elem* el = st1.pop();
+    int a = (*el).getkey();
+    cout << "a: " << a << endl;
+    cout << endl;
 
-    // Что такое init
+    // print stack
+    cout << "Stack: " << endl;
+    st1.print();
+    cout << endl;
+
+    return (0);
 }

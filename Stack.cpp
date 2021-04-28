@@ -36,6 +36,11 @@ void Stack::push(Elem* el)
     tmp->next = el;
 }
 
+void Stack::push(int key)
+{
+    push(new Elem(key));
+}
+
 void Stack::print()
 {
     Elem* tmp = this->head;
@@ -43,8 +48,7 @@ void Stack::print()
     while (tmp != nullptr)
     {
         cout << "Elem: ";
-        tmp->print();
-        cout << endl;
+        cout << tmp->key << endl;
         tmp = tmp->next;
     }
 }

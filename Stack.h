@@ -8,13 +8,13 @@ private:
     Elem* head; // ”казатель на начало стека
 
 public:
+
     Stack();
-
-    void init(int inf);
-
+    void init(int key);
     Elem* pop();
 
     void push(Elem* el);
+    void push(int key);
 
     void print();
 };

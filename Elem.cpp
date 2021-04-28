@@ -2,13 +2,13 @@
 
 using namespace std;
 
-Elem::Elem(int inf)
+Elem::Elem(int key)
 {
-    this->inf = inf;
+    this->key = key;
     this->next = nullptr;
 }
 
-void Elem::print()
+int Elem::getkey()
 {
-    cout << inf;
+    return this->key;
 }

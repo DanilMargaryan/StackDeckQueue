@@ -4,13 +4,12 @@
 class Elem
 {
 private:
-    int inf;
+    int key;
     Elem* next;
 
-
 public:
-    Elem(int inf);
-    void print();
+    Elem(int key);
+    int getkey();
 
     friend class Stack;
 };
