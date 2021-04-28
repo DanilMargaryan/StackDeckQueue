@@ -2,8 +2,6 @@
 #include "Elem.h"
 #include "Stack.h"
 #include "Queue.h"
-
-#include <stack>
 using namespace std;
 
 
@@ -39,23 +37,16 @@ int main()
 
     // QUEUE EXAMPLE
 
-    //// create queue
-    //Queue q1;
-    //q1.push(1);
-    //q1.push(2);
-    //q1.push(3);
-    //q1.print();
+    // create queue
+    Queue q1;
+    q1.push(1);
+    q1.push(2);
+    q1.push(3);
 
+    q1.print();
+    q1.pop();
+    q1.print();
 
-    //Stack st1;
-    //st1.push(1);
-    //st1.push(2);
-    //st1.push(3);
-    //st1.print();
-
-    Stack st1;
-    st1.init(3);
-    st1.print();
 
     return (0);
 }

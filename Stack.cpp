@@ -13,6 +13,12 @@ void Stack::init(int size)
         push(i);
 }
 
+void Stack::antiInit(int size)
+{
+    while (size--)
+        pop();
+}
+
 Elem* Stack::pop()
 {
     Elem* tmp = this->head;
