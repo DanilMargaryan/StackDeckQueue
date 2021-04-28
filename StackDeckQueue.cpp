@@ -15,7 +15,7 @@ int main()
     //Stack st1;
 
     //// push to stack
-    //st1.push(new Elem(5));
+    //st1.push(5);
     //st1.push(1);
     //st1.push(3);
 
@@ -39,18 +39,23 @@ int main()
 
     // QUEUE EXAMPLE
 
-    // create queue
-    Queue q1;
-    q1.push(1);
-    q1.push(2);
-    q1.push(3);
-    q1.print();
+    //// create queue
+    //Queue q1;
+    //q1.push(1);
+    //q1.push(2);
+    //q1.push(3);
+    //q1.print();
 
+
+    //Stack st1;
+    //st1.push(1);
+    //st1.push(2);
+    //st1.push(3);
+    //st1.print();
 
     Stack st1;
-    st1.push(1);
-    st1.push(2);
-    st1.push(3);
+    st1.init(3);
     st1.print();
+
     return (0);
 }

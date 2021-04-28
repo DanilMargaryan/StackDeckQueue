@@ -13,8 +13,8 @@ public:
     void init(int key);
     Elem* pop();
 
-    virtual void push(Elem* el);
-    virtual void push(int key);
+    void push(Elem* el);
+    void push(int key);
 
     void print();
 };

@@ -9,6 +9,6 @@ private:
 public:
 	Queue();
 
-	void push(Elem*) override; //to tail
-	void push(int key) override;
+	void push(Elem*); //to tail
+	void push(int key);
 };
