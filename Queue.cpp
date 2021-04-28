@@ -6,6 +6,15 @@ Queue::Queue()
 	tail = nullptr;
 }
 
+Elem* Queue::pop()
+{
+    if (head == nullptr)
+        return (nullptr);
+    if (head == tail)
+        tail = nullptr;
+    return (Stack::pop());
+}
+
 void Queue::push(Elem* el)
 {
     if (head == nullptr)

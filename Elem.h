@@ -14,4 +14,5 @@ public:
 
     friend class Stack; 
     friend class Queue;
+    friend class Deque;
 };

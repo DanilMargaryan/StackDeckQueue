@@ -21,9 +21,11 @@ void Stack::antiInit(int size)
 
 Elem* Stack::pop()
 {
-    Elem* tmp = this->head;
+    if (head == nullptr)
+        return (nullptr);
+    Elem* tmp = head;
 
-    this->head = this->head->next;
+    head = head->next;
     tmp->next = nullptr;
     return (tmp);
 }
@@ -46,7 +48,7 @@ void Stack::push(int key)
 
 void Stack::print()
 {
-    Elem* tmp = this->head;
+    Elem* tmp = head;
 
     while (tmp != nullptr)
     {

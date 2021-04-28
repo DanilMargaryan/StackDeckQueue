@@ -9,6 +9,7 @@ protected:
 public:
 	Queue();
 
-	void push(Elem*);
+	Elem* pop();
+	void push(Elem* el);
 	void push(int key);
 };
