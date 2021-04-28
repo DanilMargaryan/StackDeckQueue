@@ -1,5 +1,4 @@
 #include "Stack.h"
-
 using namespace std;
 
 Stack::Stack()
@@ -50,10 +49,12 @@ void Stack::print()
 {
     Elem* tmp = head;
 
+    cout << "PRINT: " << endl;
     while (tmp != nullptr)
     {
-        cout << "Elem: ";
+        cout << "el: ";
         cout << tmp->key << endl;
         tmp = tmp->next;
     }
+    cout << endl;
 }

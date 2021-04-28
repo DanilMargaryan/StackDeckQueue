@@ -7,7 +7,6 @@ protected:
     Elem* head;
 
 public:
-
     Stack();
 
     void init(int key);
@@ -15,6 +14,5 @@ public:
     virtual Elem* pop();
     virtual void push(Elem* el);
     virtual void push(int key);
-
     void print();
 };
