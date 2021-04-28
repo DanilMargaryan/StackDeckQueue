@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
     Stack st;                   // Создали стек
-
+    
     Elem* el = new Elem(5);     // Создание эл. стека
     st.push(el);
 

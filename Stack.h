@@ -4,7 +4,7 @@
 
 class Stack
 {
-private:
+protected:
     Elem* head; // ”казатель на начало стека
 
 public:
