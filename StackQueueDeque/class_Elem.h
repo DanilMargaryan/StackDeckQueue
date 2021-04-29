@@ -12,7 +12,8 @@ public:
     void print();
     int getkey();
 
-    friend class Stack; 
+    friend class Stack;
     friend class Queue;
     friend class Deque;
 };
+

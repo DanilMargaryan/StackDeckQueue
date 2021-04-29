@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{51b0ee0d-6006-4592-9eae-a4ea61067335}</ProjectGuid>
-    <RootNamespace>StackDeckQueue</RootNamespace>
+    <ProjectGuid>{8f5600da-ddad-4081-a174-df86c84e057c}</ProjectGuid>
+    <RootNamespace>StackQueueDeque</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,17 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Deque.cpp" />
-    <ClCompile Include="Elem.cpp" />
-    <ClCompile Include="Queue.cpp" />
-    <ClCompile Include="Stack.cpp" />
-    <ClCompile Include="StackDeckQueue.cpp" />
+    <ClCompile Include="class_Deque.cpp" />
+    <ClCompile Include="class_Elem.cpp" />
+    <ClCompile Include="class_Queue.cpp" />
+    <ClCompile Include="class_Stack.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Deque.h" />
-    <ClInclude Include="Elem.h" />
-    <ClInclude Include="Queue.h" />
-    <ClInclude Include="Stack.h" />
+    <ClInclude Include="class_Deque.h" />
+    <ClInclude Include="class_Elem.h" />
+    <ClInclude Include="class_Queue.h" />
+    <ClInclude Include="class_Stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

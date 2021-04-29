@@ -1,5 +1,5 @@
 #pragma once
-#include "Stack.h"
+#include "class_Stack.h"
 
 class Queue : public Stack
 {

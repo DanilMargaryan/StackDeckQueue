@@ -1,4 +1,4 @@
-#include "Deque.h"
+#include "class_Deque.h"
 
 Deque::Deque()
 {

@@ -1,4 +1,4 @@
-#include "Stack.h"
+#include "class_Stack.h"
 using namespace std;
 
 Stack::Stack()

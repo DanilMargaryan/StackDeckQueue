@@ -1,5 +1,5 @@
 #pragma once
-#include "Queue.h"
+#include "class_Queue.h"
 
 class Deque : public Queue
 {
@@ -13,4 +13,3 @@ public:
 	void push_back(Elem* el);
 	void push_back(int key);
 };
-

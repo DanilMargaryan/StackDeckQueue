@@ -1,9 +1,9 @@
-#include "Queue.h"
+п»ї#include "class_Queue.h"
 
 Queue::Queue()
 {
-	head = nullptr;
-	tail = nullptr;
+    head = nullptr;
+    tail = nullptr;
 }
 
 Elem* Queue::pop()
@@ -20,11 +20,10 @@ void Queue::push(Elem* el)
     if (head == nullptr)
         head = tail = el;
     else
-        tail = tail->next = el;  // равно работает справ налево
+        tail = tail->next = el;
 }
 
 void Queue::push(int key)
 {
     push(new Elem(key));
 }
-
