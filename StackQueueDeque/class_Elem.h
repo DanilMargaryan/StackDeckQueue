@@ -2,34 +2,36 @@
 #include <iostream>
 using namespace std;
 
+template <class T>
 class Elem
 {
 private:
-    int key;
+    T key;
     Elem* next;
 
 public:
-    Elem(int key);
+    Elem(T key);
     void print();
-    int getkey();
+    T getkey();
 
     friend class Stack;
-    friend class Queue;
-    friend class Deque;
 };
 
-Elem::Elem(int key)
+template <typename T>
+Elem<T>::Elem(T key)
 {
     this->key = key;
     this->next = nullptr;
 }
 
-void Elem::print()
+template <typename T>
+void Elem<T>::print()
 {
     cout << this->key;
 }
 
-int Elem::getkey()
+template <typename T>
+T Elem<T>::getkey()
 {
     return this->key;
 }

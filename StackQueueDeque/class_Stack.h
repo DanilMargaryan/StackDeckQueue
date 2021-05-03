@@ -2,6 +2,7 @@
 #include "class_Elem.h"
 using namespace std;
 
+template <class T>
 class Stack
 {
 protected:
@@ -14,28 +15,33 @@ public:
     void antiInit(int size);
     virtual Elem* pop();
     virtual void push(Elem* el);
-    virtual void push(int key);
+    virtual void push(T key);
     void print();
 };
 
-Stack::Stack()
+template <typename T>
+Stack<T>::Stack()
 {
     this->head = nullptr;
 }
 
-void Stack::init(int size)
+template <typename T>
+void Stack<T>::init(int size)
 {
     for (int i = 0; i < size; i++)
         push(i);
 }
 
-void Stack::antiInit(int size)
+template <typename T>
+void Stack<T>::antiInit(int size)
 {
     while (size--)
         pop();
 }
 
-Elem* Stack::pop()
+//44 ?
+template <typename T>
+Elem<T>* Stack<T>::pop()
 {
     if (head == nullptr)
         return (nullptr);
@@ -46,7 +52,9 @@ Elem* Stack::pop()
     return (tmp);
 }
 
-void Stack::push(Elem* el)
+//57?
+template <typename T>
+void Stack<T>::push(Elem<T>* el)
 {
     if (this->head == nullptr)
         this->head = el;
@@ -57,12 +65,14 @@ void Stack::push(Elem* el)
     }
 }
 
-void Stack::push(int key)
+template <typename T>
+void Stack<T>::push(T key)
 {
     push(new Elem(key));
 }
 
-void Stack::print()
+template <typename T>
+void Stack<T>::print()
 {
     Elem* tmp = head;
 
