@@ -139,16 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="class_Deque.cpp" />
-    <ClCompile Include="class_Elem.cpp" />
-    <ClCompile Include="class_Queue.cpp" />
-    <ClCompile Include="class_Stack.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="class_Deque.h" />
     <ClInclude Include="class_Elem.h" />
-    <ClInclude Include="class_Queue.h" />
     <ClInclude Include="class_Stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

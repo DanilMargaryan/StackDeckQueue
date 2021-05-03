@@ -3,14 +3,12 @@ using namespace std;
 
 #include "class_Elem.h"
 #include "class_Stack.h"
-#include "class_Queue.h"
-#include "class_Deque.h"
 
 int main()
 {
     Stack s;
-    Queue q;
-    Deque d;
+    s.init(5);
+    s.print();
 
     return (0);
 }
